@@ -23,7 +23,7 @@ body {
   flex-direction: row;
   gap: 50px;
   padding: 20px 20px 20px 20px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.123);
+  border-bottom: 1px solid rgb(65, 225, 204);
 }
 
 .nav-container {
@@ -193,18 +193,23 @@ footer {
   border-bottom: 1px solid rgb(65, 225, 204);
   padding: 20px 20px 20px 20px;
 }
+
 h2 {
+  text-align: center;
   color: white;
   margin-bottom: 20px;
 }
+
 .footer-dscription {
   font-size: 1.2rem;
 }
+
 .second-footer-role {
   display: flex;
   flex-direction: row;
   gap: 90px;
 }
+
 .down-footer-text {
   display: flex;
   flex-direction: row;
@@ -213,7 +218,7 @@ h2 {
 .down-r-2 {
   margin-left: 45%;
   gap: 40px;
-} 
+}
 
 /* Links styling  */
 .links {
@@ -221,6 +226,99 @@ h2 {
   text-decoration: none;
   cursor: pointer;
 }
+
 .links:hover {
   color: rgb(65, 225, 204);
+}
+
+/* Contact styling */
+
+/*UPPER LAYER STYLING  */
+
+.contact-top-grid {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.contact-text {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.container {
+  border: 1px solid rgba(65, 225, 204, 0.37);
+  height: 215px;
+  width: 200px;
+  padding-top: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* LOWER LAYER STYLING */
+.down {
+  margin-top: 150px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid white; */
+  /* padding: 45px 20px 45px 20px ; */
+}
+
+.firts-role {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  height: 40px;
+  width: 330px;
+  background: transparent;
+  border: 1px solid rgba(65, 225, 204, 0.37);
+  margin-left: 10px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid aqua;
+  box-shadow: 0 0 4px aquamarine;
+  transition: 0.6s ease-out;
+}
+
+textarea {
+  color: white;
+  height: 140px;
+  width: 45%;
+  background: transparent;
+  border: 1px solid rgba(65, 225, 204, 0.37);
+  margin-bottom: 40px;
+}
+
+textarea:focus {
+  outline: none;
+  border: 1px solid aqua;
+  box-shadow: 0 0 4px aquamarine;
+  transition: 0.6s ease-out;
+}
+
+button[type="submit"] {
+  height: 40px;
+  width: 200px;
+  text-align: center;
+  background-color: rgb(93, 199, 199);
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+.muted {
+  color:   aqua;
+  font-size: 1.5rem;
 }
