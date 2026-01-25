@@ -319,6 +319,15 @@ button[type="submit"] {
   cursor: pointer;
 }
 .muted {
-  color:   aqua;
+  color: aqua;
   font-size: 1.5rem;
+}
+
+/* Pricing styling  Layout*/
+
+.pricing-hero {
+  background: url('../img/Ferrari-2.jpg') no-repeat center/cover;
+  width: 92.0%;
+  margin-left: 5%;
+  padding: 150px 180px 150px 180px ;
 }
