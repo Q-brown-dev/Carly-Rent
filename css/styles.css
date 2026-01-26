@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+.fa-brands {
+  color: rgb(93, 199, 199);
+  margin-left: 12px;
+}
 body {
   background: #000;
 }
