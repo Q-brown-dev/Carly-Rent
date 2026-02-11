@@ -14,39 +14,37 @@ body {
 
 .main {
   background: url('../img/car-4.jpg')no-repeat center/cover;
-}
-
-#main {
-
-  background: url('../img/car-5.jpg') center/cover;
-  width: 100%;
-  height: 700px;
+  padding: 30px;
 }
 
 #header {
+  top: 0px;
+  left: 0px;
+  right: 0px;
   display: flex;
   flex-direction: row;
   gap: 50px;
   padding: 20px 20px 20px 20px;
   border-bottom: 1px solid rgb(65, 225, 204);
+  position: fixed;
+  background: #00000052;
+  margin-bottom: 140px;
 }
 
 .nav-container {
   display: flex;
   flex-direction: row;
-  margin-left: 700px;
   gap: 50px;
+  margin-left: 700px;
   list-style: none;
 }
 
 .nav-container li a {
-  margin-left: 25px;
   text-decoration: none;
   color: white;
   font-size: 0.95rem;
   position: relative;
 }
-
 
 .nav-container li a::after {
   content: '';
@@ -69,8 +67,6 @@ body {
   transform-origin: left;
 }
 
-
-
 .logo {
   text-align: center;
   color: white;
@@ -81,6 +77,37 @@ body {
 span {
   color: rgb(65, 225, 204);
   font-size: 27px;
+}
+
+.active-for-header {
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 150px;
+  color: white;
+  z-index: 1000;
+  position: fixed;
+  padding: 20px 10%;
+  background: #2e2b2bda;
+  animation: slideDown 1s ease;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-60px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.active h1 {
+  font-size: 16px;
 }
 
 .hero {
@@ -252,6 +279,9 @@ h2 {
 
 /*UPPER LAYER STYLING  */
 
+.contact-box {
+  margin-top: 70px;
+}
 .contact-top-grid {
   display: flex;
   justify-content: center;
@@ -286,14 +316,17 @@ h2 {
   /* border: 1px solid white; */
   /* padding: 45px 20px 45px 20px ; */
 }
+
 button[type="submit"] {
   border-radius: 5px;
   border: 1px solid #00ffd5;
-  box-shadow: 0 0  8px rgb(0, 238, 238);
+  box-shadow: 0 0 8px rgb(0, 238, 238);
 }
+
 button[type="submit"]:active {
-  box-shadow: none ;
+  box-shadow: none;
 }
+
 
 .firts-role {
   display: flex;
@@ -368,7 +401,7 @@ button[type="submit"] {
   color: #aaa;
 }
 
-/* ABOUT */
+/* ` */
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -391,6 +424,10 @@ button[type="submit"] {
   border-radius: 15px;
   text-align: center;
   flex: 1;
+}
+
+h3 {
+  color: #fff;
 }
 
 /* PRICING */
@@ -446,6 +483,7 @@ button[type="submit"] {
   position: relative;
   overflow: hidden;
   border-radius: 18px;
+  cursor: pointer;
 }
 
 .car-card img {
@@ -473,4 +511,84 @@ button[type="submit"] {
 
 .car-card:hover .overlay {
   opacity: 1;
+}
+
+/* Vehicles */
+.vehicles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 80px 80px 80px 80px;
+  cursor: pointer;
+}
+
+.vehicle-card {
+  border: 1px solid;
+  border-radius: 18px;
+  background: #111;
+  border: 1px solid #333;
+}
+
+.vehicle-card:hover {
+  border-color: #00ffd5;
+  transition: 0.6s;
+  transform: translateY(-12px);
+}
+
+.vehicle-card img {
+  border-radius: 18px;
+  height: 210px;
+  width: 410px;
+}
+
+.stars {
+  color: gold;
+  font-size: 27px;
+  margin-left: 60px;
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+  margin-left: 60px;
+  text-align: center;
+}
+
+.big-text {
+  color: white;
+  text-align: center;
+  margin-left: 60px;
+  text-align: center;
+}
+
+.double-content {
+  display: flex;
+  gap: 50px;
+  margin-left: 60px;
+  text-align: center;
+}
+
+select {
+  background: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+option {
+  background: #000;
+  /* cursor: pointer; */
+}
+
+.card-btn {
+  cursor: pointer;
+  text-align: center;
+  margin-left: 60px;
+  text-align: center;
+  margin-bottom: 21px;
+  width: 210px;
+  height: 45px;
+  background: #00ffd5;
+  border: none;
+  box-shadow: 0 0 8px #00ffd5;
 }
