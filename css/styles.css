@@ -129,7 +129,7 @@ h1 {
   box-shadow: rgb(65, 225, 204) -2px 0px 0px;
 }
 
-p {
+.hero-p {
   padding: 12px;
   font-size: 17px;
   color: white;
@@ -225,7 +225,7 @@ p {
 
 footer {
   padding: 40px 34px 24px 40px;
-  background: rgba(18, 6, 32, 0.986);
+  background: rgba(0, 0, 0, 0.089);
 }
 
 .footer-grid {
@@ -282,6 +282,7 @@ h2 {
 .contact-box {
   margin-top: 70px;
 }
+
 .contact-top-grid {
   display: flex;
   justify-content: center;
@@ -515,11 +516,12 @@ h3 {
 
 /* Vehicles */
 .vehicles {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
   padding: 80px 80px 80px 80px;
   cursor: pointer;
+  margin-left: -30px;
 }
 
 .vehicle-card {
@@ -591,4 +593,297 @@ option {
   background: #00ffd5;
   border: none;
   box-shadow: 0 0 8px #00ffd5;
+}
+
+
+#sideMenu {
+  display: none;
+}
+
+/* Mobile menu */
+.menu-toggle {
+  display: none;
+  background: transparent;
+  color: white;
+  border: 0;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.header {
+  display: none;
+  position: fixed;
+}
+
+.media-footer {
+  display: none;
+}
+
+/* 
+*Responsive
+ */
+
+@media (max-width: 768px) {
+
+  /* Body */
+  body {
+    width: 330px;
+  }
+
+  /* Header */
+  #header {
+    display: none;
+  }
+
+  .logo {
+    font-size: 17px;
+    margin-left: 10px;
+    text-align: center;
+  }
+
+  span {
+    font-size: 17px;
+  }
+
+  .media-header {
+    left: 0px;
+    top: 0px;
+    display: flex;
+    border-bottom: 1px solid #00ffd5;
+  }
+
+  .nav-container {
+    display: none;
+  }
+
+  #sideMenu {
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    top: 70px;
+    right: 0px;
+    background: #111;
+    width: 100%;
+    text-align: center;
+    padding: 20px 20px;
+    z-index: 1004;
+    border-bottom: 1px solid #00ffd5;
+  }
+
+
+  #sideMenu.active-For-Menu {
+    position: fixed;
+    display: flex;
+    animation: slideDown 0.5s ease-in-out;
+  }
+
+  .active-up {
+    position: fixed;
+    display: flex;
+    animation: slideUp 0.5s ease-in;
+  }
+
+  #sideMenu li a {
+    text-decoration: none;
+    color: #00ffd5;
+    padding: 16px;
+    gap: 30px;
+    margin-bottom: 30%;
+    margin-right: 320px;
+  }
+
+
+  .menu-icon {
+    display: block;
+  }
+
+  .menu-toggle {
+    display: block;
+    color: #00ffd5;
+    margin-left: 20px;
+  }
+
+  /* Hero  */
+
+  .main {
+    background: url('../img/car-bg\ \(5\).jpg') center/cover no-repeat;
+    width: 240px;
+    /* display: flex; */
+    margin-right: 120px;
+  }
+
+  /* Carousel */
+  .carousel {
+    margin-left: -110px;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* .btn { */
+  /* margin-top: 20px; */
+  /* margin-left: 40px; */
+  /* } */
+
+  h1 {
+    font-size: 12px;
+  }
+
+
+  .hero-p {
+    display: none;
+  }
+
+
+
+  /* Footer */
+  footer {
+    display: none;
+  }
+
+  .media-header {
+    position: fixed;
+  }
+
+  .media-footer {
+    display: block;
+    width: 290px;
+    gap: 10px;
+    padding: 12px 2px 12px 12px;
+    border-bottom: 1px solid #00ffd5;
+  }
+
+  .logo-footer {
+    color: white;
+    border-bottom: 1px solid #00ffd5;
+  }
+
+
+  .muted {
+    font-size: 12px;
+  }
+
+  .drop-down {
+    padding: 10px 10px 10px 10px;
+    background: #fff;
+    width: 40%;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+  }
+
+  .drop-down2 {
+    padding: 10px 10px 10px 10px;
+    background: #fff;
+    width: 40%;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+  }
+
+  .drop-down3 {
+    padding: 10px 10px 10px 10px;
+    background: #fff;
+    width: 40%;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+  }
+
+  .drop-down-menu {
+    display: none;
+  }
+
+  .drop-down-menu2 {
+    display: none;
+  }
+
+  .drop-down-menu3 {
+    display: none;
+  }
+
+  .active-hover .drop-down-menu3 {
+    display: block;
+    padding: 10px 10px 10px 10px;
+    background: #000;
+    width: 40%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-top: 32px;
+    position: absolute;
+    border: 1px solid white;
+  }
+
+  .active-hover .drop-down-menu2 {
+    display: block;
+    padding: 10px 10px 10px 10px;
+    background: #000;
+    width: 50%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-top: 32px;
+    position: absolute;
+    border: 1px solid white;
+  }
+  
+  .active-hover .drop-down-menu {
+    display: block;
+    padding: 10px 10px 10px 10px;
+    background: #000;
+    width: 30%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-top: 32px;
+    position: absolute;
+    transition: all 0.5s ease-out;
+    border: 1px solid white ;
+  }
+
+  .menu-list {
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  .menu-list:hover {
+    background-color: #fff;
+    padding: 5px 5px 5px 5px;
+    color: 000;
+    border-radius: 2px;
+    transition: all 0.5s ease-out;
+  }
+
+  .media-footer-grid {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+}
+
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }

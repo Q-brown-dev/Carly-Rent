@@ -12,10 +12,11 @@
 
 <body>
     <main class="main">
-        <header id="header">
+        <header id="header" class="headers">
+
             <div class="logo"><span>Corly</span>Rent</div>
 
-            <nav class="nav-container">
+            <nav id="nav" class="nav-container">
                 <li><a href="About.html">About</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="pricing.html">Pricing/Vehicles</a></li>
@@ -33,10 +34,12 @@
                     <h1><span class="big-logo">AutoWorks</span> - Drive <br>
                         with confidence
                     </h1>
-                    <p>Lorem ipsum dolor sit amet consectetur. <br>
+                    <p class="hero-p">Lorem ipsum dolor sit amet consectetur. <br>
                         Lorem ipsum dolor sit amet consectetur adipisicing. <br>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     </p>
+
+                    <br>
                     <a href="#gallery" class="btn">Show room</a>
                 </div>
             </div>
@@ -46,7 +49,7 @@
                 <div class="overlay"></div>
                 <div class="hero">
                     <h1>Connect With Artists</h1>
-                    <p>Join our community and share your own creations.</p>
+                    <p class="hero-p">Join our community and share your own creations.</p>
                     <a href="#join" class="btn">Join Now</a>
                 </div>
             </div>
@@ -56,7 +59,7 @@
                 <div class="overlay"></div>
                 <div class="hero">
                     <h1>Buy & Sell Artwork</h1>
-                    <p>Support artists by purchasing unique pieces.</p>
+                    <p class="hero-p">Support artists by purchasing unique pieces.</p>
                     <a href="#shop" class="btn">Shop Now</a>
                 </div>
             </div>
@@ -68,6 +71,24 @@
             </div>
         </div>
     </main>
+
+
+    <!-- Side Menu -->
+
+    <header class="media-header header">
+        <div class="logo"><span>Corly</span>Rent</div>
+        <button id="menuToggle" class="menu-toggle" aria-label="Menu">☰</button>
+    </header>
+    <nav id="sideMenu">
+        <li><a href="About.html">About</a></li>
+        <br>
+        <li><a href="gallery.html">Gallery</a></li>
+        <br>
+        <li><a href="pricing.html">Pricing/Vehicles</a></li>
+        <br>
+        <li><a href="contact.html">Contact</a></li>
+    </nav>
+
 
     <footer>
         <div class="footer-grid">
@@ -126,6 +147,58 @@
 
 
     </footer>
+
+
+    <!-- Footer for media -->
+
+
+    <div class="logo-footer">Corly <span>Rent</span></div>
+    <footer class="media-footer">
+        <div class="media-footer-grid">
+            <!--  -->
+            <div class="drop-down">
+                <p class="drop-down-text">Account 👇</p>
+                <div class="drop-down-menu">
+                    <a href="#" class="menu-list">Profile</a>
+                    <a href="#" class="menu-list">Settings</a>
+                    <a href="#" class="menu-list">Billing</a>
+                    <a href="#" class="menu-list">Notification</a>
+                </div>
+            </div>
+
+            <!--  -->
+            <div class="drop-down2">
+                <p class="drop-down-text">About 👇</p>
+                <div class="drop-down-menu2">
+                    <a href="#" class="menu-list">Services</a>
+                    <a href="pricing.html" class="menu-list">Pricing/vehicles</a>
+                    <a href="contact.html" class="menu-list">Contact</a>
+                    <a href="#" class="menu-list">Center</a>
+                </div>
+            </div>
+
+            <!--  -->
+            <div class="drop-down3">
+                <p class="drop-down-text">Company 👇</p>
+                <div class="drop-down-menu3">
+                    <a href="#" class="menu-list">Community</a>
+                    <a href="#" class="menu-list">Help Center</a>
+                    <a href="#" class="menu-list">Support</a>
+                </div>
+            </div>
+
+
+            <!--  -->
+
+        </div>
+
+
+
+        <div class="muted">
+            Terms/Privacy Policy Cookies
+        </div>
+    </footer>
+
 
     <script src="js/script.js"></script>
 </body>
