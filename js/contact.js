@@ -23,23 +23,27 @@ if (header) {
 }
 
 
-// Footer for media
 
-const dropDown1 = document.querySelector(".drop-down");
-const dropdownMenu1 = document.querySelector(".drop-down-menu");
-dropDown1.addEventListener("click", () => {
-    dropDown1.classList.toggle("active-hover");
-})
+// Back to top btn
+const btn = document.getElementById("backToTop");
 
-const dropDown2 = document.querySelector(".drop-down2");
-const dropdownMenu2 = document.querySelector(".drop-down-menu2");
-dropDown2.addEventListener("click", () => {
-    dropDown2.classList.toggle("active-hover");
-})
+//Show button when scrlloling down
 
-const dropDown3 = document.querySelector(".drop-down3");
-const dropdownMenu3 = document.querySelector(".drop-down-menu3");
-dropDown3.addEventListener("click", () => {
-    dropDown3.classList.toggle("active-hover");
-})
+window.onscroll = function () {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+
+        btn.style.display = "block";
+    } else {
+        btn.style.display = "none"
+    }
+}
+
+
+// Scroll to top when clicked
+btn.onclick = function () {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+};
 

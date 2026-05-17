@@ -48,7 +48,11 @@ This project demonstrates modern frontend development practices and UI design sk
 - CSS3  
 - JavaScript  
 - Responsive Web Design  
-
+---
+## 📸 Preview for laptop
+![Corlyrent website Screenshot](./img/Preview%20laptop.png)
+## 📸 Preview for media
+![CorlyRent media website screenchot](./img/Preview%20media.png)
 ---
 
 ## 📂 Project Structure

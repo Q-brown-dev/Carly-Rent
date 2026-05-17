@@ -430,6 +430,9 @@ button[type="submit"] {
 h3 {
   color: #fff;
 }
+P {
+  color: #fff;
+}
 
 /* PRICING */
 .pricing {
@@ -619,6 +622,31 @@ option {
   display: none;
 }
 
+/*-----------------------------------*\
+  #BACK TO TOP
+\*-----------------------------------*/
+
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 12px 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 50%;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  display: none;
+  transition: all 0.3s ease;
+}
+
+#backToTop:hover {
+  background-color: #555;
+  transform: scale(1.1);
+}
+
+
 /* 
 *Responsive
  */
@@ -766,7 +794,9 @@ option {
 
   .drop-down {
     padding: 10px 10px 10px 10px;
-    background: #fff;
+    background: #000;
+    color: white;
+    border: 1px solid white;
     width: 40%;
     height: 40px;
     border-radius: 5px;
@@ -777,7 +807,9 @@ option {
 
   .drop-down2 {
     padding: 10px 10px 10px 10px;
-    background: #fff;
+    background: #000;
+    color: white;
+    border: 1px solid white;
     width: 40%;
     height: 40px;
     border-radius: 5px;
@@ -788,7 +820,9 @@ option {
 
   .drop-down3 {
     padding: 10px 10px 10px 10px;
-    background: #fff;
+    background: #000;
+    color: white;
+    border: 1px solid white;
     width: 40%;
     height: 40px;
     border-radius: 5px;
